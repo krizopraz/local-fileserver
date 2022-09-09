@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    h1 Desen Al 
+    p Desen almak için linklere tıklayınız.
+    ul
+     each file in files
+        li
+            a(href=`desenal/indir/${file}`) #{file}
+     else
+        li Kayıtlı Desen Yok

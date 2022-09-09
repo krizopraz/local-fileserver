@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+    h1 #{mesaj}
+    form(action="/desenver",enctype='multipart/form-data', method="post") 
+        fieldset 
+            legend Desen Ver
+            label(for="desen") Desen
+            input(type="file", name="desen")
+            button(type="submit") Desen Gönder

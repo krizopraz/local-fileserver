@@ -1,0 +1,27 @@
+{
+  "name": "local-fileserver",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "utf8": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0"
+  },
+  "pkg": {
+    "scripts":[ "lib/**/*.js","routes/*.js","./app.js"],
+    "assets": ["views/**/*","public/**/*"],
+    "targets": [ "node14-windows-x64" ],
+    "outputPath": "dist"
+  },
+  "bin": "./bin/www"
+}
